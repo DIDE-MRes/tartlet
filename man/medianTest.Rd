@@ -23,6 +23,7 @@ This function implements a non-parametric test of differences between medians in
 head(VL)
 
 ## make test
+set.seed(1)
 x <- medianTest(VL$titer, VL$type)
 
 ## look at results

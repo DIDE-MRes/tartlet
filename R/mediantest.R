@@ -17,6 +17,7 @@
 #' head(VL)
 #'
 #' ## make test
+#' set.seed(1)
 #' x <- medianTest(VL$titer, VL$type)
 #'
 #' ## look at results
