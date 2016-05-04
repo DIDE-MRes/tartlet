@@ -1,4 +1,17 @@
-
+#' Median test
+#'
+#' This function implements a non-parametric test of differences between medians in two samples.
+#'
+#' @export
+#' @importFrom ade4 as.randtest
+#'
+#' @author T. Jombart
+#'
+#' @param x a vector of a quantitative variable
+#' @param fac a factor defining 2 groups
+#' @param n the number of permutations for the Monte Carlo procedure
+#' @param ... further arguments passed to as.randtest
+#'
 medianTest <- function(x, fac, n=999, ...){
     ## check dependencies
     if(!require(ade4)) stop("ade4 is not installed")
