@@ -18,6 +18,18 @@ medianTest(x, fac, n = 999, ...)
 \description{
 This function implements a non-parametric test of differences between medians in two samples.
 }
+\examples{
+## look at the data
+head(VL)
+
+## make test
+x <- medianTest(VL$titer, VL$type)
+
+## look at results
+x
+plot(x)
+
+}
 \author{
 T. Jombart
 }
