@@ -12,6 +12,17 @@
 #' @param n the number of permutations for the Monte Carlo procedure
 #' @param ... further arguments passed to as.randtest
 #'
+#' @examples
+#' ## look at the data
+#' head(VL)
+#'
+#' ## make test
+#' x <- medianTest(VL$titer, VL$type)
+#'
+#' ## look at results
+#' x
+#' plot(x)
+#'
 medianTest <- function(x, fac, n=999, ...){
     ## check dependencies
     if(!require(ade4)) stop("ade4 is not installed")
